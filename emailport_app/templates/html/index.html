@@ -1,0 +1,150 @@
+{% load static %}
+
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Silva Web Company</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href=  {% static "emailport_app/css/main.css" %}  />
+		<noscript><link rel="stylesheet" href= {% static "emailport_app/css/noscript.css" %} /></noscript>
+		<!-- fontawesome link -->
+		<link href="{% static 'fontawesomefree/css/fontawesome.css' %}" rel="stylesheet" >
+		<link href="{% static 'fontawesomefree/css/brands.css' %}" rel="stylesheet" >
+		<link href="{% static 'fontawesomefree/css/solid.css' %}" rel="stylesheet">
+		<!--  -->
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper" class="fade-in">
+
+				<!-- Intro -->
+					<div id="intro">
+						<h1>Silva <br>Web Company</h1>
+						<p>Hi I am Silva, a full-stack web programmer/Designer skilled in HTML5, CSS3, JavaScript, Python. This website is built by <a href="https://twitter.com/officialsilva01">@SILVA</a> for <a href="https://html5up.net">HTML5 UP</a><br />
+						and released for free under the <a href= "https://html5up.net/license" >Creative Commons license.</a></p>
+						<ul class="actions">
+							<li><a href=  "#header"  class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
+						</ul>
+					</div>
+
+				<!-- Header -->
+					<header id="header">
+						<a href= {% url 'index' %}  class="logo">SWC</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li class="active"><a href= {% url 'index' %}  >Silva Web Company</a></li>
+							<li><a href= {% url "generic" %} >Generic Page</a></li>
+							<li><a href= {% url "elements" %} >Some Developers Tips</a></li>
+						</ul>
+						<ul class="icons">
+							<li><a href= "https://twitter.com/officialsilva01"  class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href= "https://www.linkedin.com/in/silva-dev-1b907419b/"  class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
+							<li><a href= "https://github.com/qwertycoldwar123" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Featured Post -->
+							<article class="post featured">
+								<header class="major">
+									<h2><a href=  "#"  >Working with start-ups to create growth driven products and brands.</a></h2>
+									<p>Whatever you are! a small company?, A Big company?, or a freelance blogger?.<br />
+									Our Company makes your business Known at a global scale.<br />
+									with our website our team is dedicated to offer you the best support.</p>
+								</header>
+								<a href= "#"  class="image main"><img src= {% static "emailport_app/images/office.jpg" %}  alt="office" /></a>
+								<ul class="actions special">
+									<li><a href= "#"  class="button large">Full Story</a></li>
+								</ul>
+							</article>
+
+						<!-- Posts -->
+							<section class="posts">
+								<article>
+									<header>
+										<h2><a href= "#">You got a cool project in mind? <br> Lets collaborate.</a></h2>
+									</header>
+									<a href= "#" class="image fit"><img src= {% static "emailport_app/images/idea.webp" %}  alt="" /></a>
+									<p>It all boils down to understanding the user base. In most cases, it's the design that decides your position between making or breaking a business.</p>
+									<ul class="actions special">
+										<li><a href= "#" class="button">Full Story</a></li>
+									</ul>
+								</article>
+								<article>
+									<header>
+										<h2><a href= "#">We can create a powerful brand and website for you</a></h2>
+									</header>
+									<a href= "#" class="image fit"><img src= {% static "emailport_app/images/shopping.jpg" %}  alt="" /></a>
+									<p>Our website and team are dedicated to serve till satifaction your ultmost cravings or need to make your business become a global limelight.</p>
+									<ul class="actions special">
+										<li><a href= "#"  class="button">Full Story</a></li>
+									</ul>
+								</article>
+							</section>
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<section>
+							<form method="POST"  >
+								{% csrf_token %}
+								{{ form }}								 
+								<div style="padding:20px 0">
+									<input type="submit" value="Send Message"  />
+								</div>
+								
+								
+							</form>
+						</section>
+						<section class="split contact">
+						
+								<h3>Email</h3>
+								<p><a href= "#">silvawebcompany@gmail.com</a></p>
+							</section>
+							<section>
+								<h3>Social</h3>
+								<ul class="icons alt">
+									<li><a href= "https://twitter.com/officialsilva01"  class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+									<li><a href= "https://www.linkedin.com/in/silva-dev-1b907419b/"  class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
+									<li><a href= "https://github.com/qwertycoldwar123"  class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+								</ul>
+							</section>
+						</section>
+					</footer>
+					
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; Untitled</li><li>Design: <a href=  "https://html5up.net"  >HTML5 UP</a></li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src={% static "emailport_app/js/jquery.min.js" %} ></script>
+			<script src={% static "emailport_app/js/jquery.scrollex.min.js" %} ></script>
+			<script src={% static "emailport_app/js/jquery.scrolly.min.js" %} ></script>
+			<script src={% static "emailport_app/js/browser.min.js" %} ></script>
+			<script src={% static "emailport_app/js/breakpoints.min.js" %} ></script>
+			<script src={% static "emailport_app/js/util.js" %} ></script>
+			<script src={% static "emailport_app/js/main.js" %} ></script>
+
+			<!-- fontawesome js  -->
+			<script src="{% static 'fontawesomepro/js/fontawesome.js' %}"></script>
+			<script src="{% static 'fontawesomepro/js/solid.js' %}"></script>
+			<script src="{% static 'fontawesomepro/js/sharp-solid.js' %}"></script>
+			<script src="{% static 'fontawesomepro/js/brands.js' %}"></script>
+	</body>
+</html>

@@ -1,3 +1,11 @@
-from django.test import TestCase
+# from django.test import TestCase
 
-# Create your tests here.
+# from . import views
+
+# # Create your tests here.
+
+# class TestEmailApp(TestCase):
+#     def test_index(self):
+#         result = self.client.get("/")
+#         self.assertEqual(result.status_code, 200)  
+#         self.assertContains(result, "Web Company")
